@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Service Spot</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="logo.png">
+</head>
+
+<body>
+  <div class="navbar">
+    <nav>
+      <ul>=
+        <li class=" logo"><img src="logo.png" alt="service spot"></li>
+        <li><a class="navbarclr" href="index.html">Home</a></li>
+        <li><a class="navbarclr" href="about.html">About</a></li>
+        <li><a class="navbarclr" href="#services">Services</a></li>
+        <li><a class="navbarclr" href="contact.html">Contact</a> </li>
+        <li style="padding-top: 0; padding-bottom: 30px;"> <button class="openButton" onclick="openForm()">Sign up</button></li>
+      </ul>
+    </nav>
+  </div>
+<!--   <div class="loginPopup"> -->
+    <div class="formPopup" id="popupForm">
+      <form class="formContainer">
+        <h1 style="text-align: center;"> Sign Up</h1>
+        <label for="User name">
+          <strong>User name</strong>
+        </label>
+        <input type="text" id="userName" placeholder="User Name" name="user name" required>
+        
+        <label for="email">
+          <strong>E-mail</strong>
+        </label>
+        <input type="text" id="email" placeholder="Your Email" name="email" required>
+        <label for="psw">
+          <strong>Password</strong>
+        </label>
+        <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+        <button type="submit" class="btn check-button">Sign Up</button>
+        <button type="button" class="btn cancel check-button" onclick="closeForm()">Close</button>
+        
+      </form>
+<!--     </div> -->
+  </div>
+  <div class="homepage">
+
+    <h1>Service Spot</h1>
+    <h2>Starting from RS 299 only</h2>
+    <h1>ALL OVER INDIA</h1>
+  </div>
+</div>
+  <div class="dataforform">
+    <h1>BOOK NOW</h1>
+    <p>Please fill out this form with the required information.</p>
+    <form method="post">
+
+      <label for="first-name">Enter Your Name: <input id="first-name" name="first-name" type="text" required /></label>
+      <label for="phone no">Enter Your Phone no: <input id="phone no" name="phone no" type="tel" pattern="[0-9]{10}"
+          required /></label>
+      <label for="address">Enter Your address: <input id="address" name="address" type="text" required /></label>
+      <label for="pincode">Enter Your Pincode: <input id="pincode" name="pincode" type="tel" maxlength="6"
+          required /></label>
+
+      <label for="service">Service
+        <select id="service" name="service" required>
+          <option value="">(Select one)</option>
+          <option value="1">BATHROOM FITTING</option>
+          <option value="2">TOILET FITTING</option>
+          <option value="3">SANITARY REPAIR</option>
+          <option value="4">PIPELINE REPAIR</option>
+          <option value="5">SWICTHBOARD REPAIR</option>
+          <option value="6">FAN REPAIR</option>
+          <option value="7">TUBELIGHT INSTALLATION/REPAIR</option>
+          <option value="8">Other</option>
+        </select>
+      </label>
+      <label for="requirment">requirment:
+        <textarea id="requirment" name="requirment" rows="3" cols="30"></textarea>
+      </label>
+      <label for="referrer">How did you hear about us?
+        <select id="referrer" name="referrer">
+          <option value="">Select</option>
+          <option value="1">Facebook</option>
+          <option value="2">Friend</option>
+          <option value="3">Whatsapp</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I
+        accept
+        the <a href="terms.html" id="tc">terms and conditions</a>
+      </label>
+
+      <input class="submit-btn" type="submit" value="Submit" />
+    </form>
+  </div>
+  <h1 class="main-services" id="services">Services</h1>
+  <div class="service">
+    <div class="s1">
+      <img src="plumbing1.jfif" alt="error">
+      <h3>BATHROOM FITTING</h3>
+      <ul>
+        <li>Complete Cleaning of Washing Machine</li>
+        <li>Installing and repairing bathroom fixtures</li>
+        <li>Repairing drain lines </li>
+      </ul>
+      <button type="submit" value="Book Now" class="booknow" onclick="booknow()" >Book Now</button>
+    </div>
+    <div class="s2">
+      <img src="plumbing2.jfif" alt="error">
+      <h3>TOILET FITTING</h3>
+      <ul>
+        <li>Complete Cleaning of Washing Machine</li>
+        <li>Repairing or replacing toilet components</li>
+        <li>Unclogging toilets</li>
+      </ul>
+      <a href="#service.html">
+      <button type="submit" value="Book Now" class="booknow" onclick="booknow()">Book Now</button></a>
+    </div>
+    <div class="s3">
+      <img src="plumbing3.jpg" alt="error">
+      <h3>SANITARY REPAIR</h3>
+      <ul>
+        <li>Complete Cleaning of Washing Machine</li>
+        <li>All parts to be checked properly</li>
+        <li>Upgrading plumbing systems for improved sanitation</li>
+      </ul>
+      <button type="submit" value="Book Now" class="booknow" onclick="booknow()">Book Now</button>
+    </div>
+  </div>
+
+  <div class="service">
+    <div class="s1">
+      <img class="elec1" src="elec1.jfif" alt="error">
+      <h3>SWICTHBOARD REPAIR</h3>
+      <ul>
+        <li>fitting and rewiring Switchboard.</li>
+        <li>Sectional panels, linear panels, incomer panels repairing</li>
+        <li>Changing switch, plug, regulator,fuse etc..</li>
+      </ul>
+      <button type="submit" value="Book Now" class="booknow" onclick="booknow()">Book Now</button>
+    </div>
+    <div class="s2">
+      <img src="elec2.jfif" alt="error">
+      <h3>FAN REPAIR</h3>
+      <ul>
+        <li>Repairing of motor, capacitor, wire etc..</li>
+        <li>Ceiling fan installation</li>
+        <li>Lubrication of fans</li>
+      </ul>
+      <button type="submit" value="Book Now" class="booknow" onclick="booknow()">Book Now</button>
+    </div>
+    <div class="s3">
+      <img src="elec3.jfif" alt="error">
+      <h3>TUBELIGHT INSTALLATION/REPAIR</h3>
+      <ul>
+        <li>New Tube light installation</li>
+        <li>Replacing faulty or burnt-out fluorescent tubes</li>
+        <li>Will check for ballest,starter and wiring </li>
+      </ul>
+      <button type="submit" value="Book Now" class="booknow" onclick="booknow()">Book Now</button>
+    </div>
+  </div>
+  </div>
+
+  <div class="choose-us">
+    <h1 class="why">Why Choose Us?</h1>
+    <div class="choose-content">
+      <img class="choose-img" src="WHY CHOOSE US.png">
+      <div class="choose-text">
+        <ul>
+          <li>Ontime Service at your Doorstep.</li>
+          <li>15 Days Service Warranty..</li>
+          <li>20% lower than Market Price.</li>
+          <li>Pay Online & Get 5% additional Discount.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="questions">
+    <h1 class="main-que">Frequently Asked Questions</h1>
+    <div class="text-que">
+      <ul class="collapsibleUl">
+        <li class="collapsible">Why should we choose you?</li>
+        <div class="content">
+          We are dedicated towards customer satisfaction. We are ready to invest more time in making sure that work
+          done by us will last long rather than focusing on doing it just for sake of it. We have professionals who
+          have
+          an average experience of 8-10 years.We make sure that your issues gets resolved as soon as possible.
+        </div>
+        <li class="collapsible">What all services do you provide?</li>
+        <div class="content">
+          We provide services such as plumbing, electrical work, welding, carpentry, and more.
+        </div>
+
+        <li class="collapsible">How much do you charge for services?</li>
+
+        <div class="content">
+          We are dedicated towards customer satisfaction. We are ready to invest more time in making sure that work
+          done by us will last long rather than focusing on doing it just for sake of it.
+        </div>
+        <li class="collapsible">Do you provide any guarantee on your service?</li>
+
+        <div class="content">
+          We do provide 15 days of guarantee on our service. However we make sure that you should be required to use
+          that guarantee and we do our job in the best possible way.
+        </div>
+        <li class="collapsible">How much time do you take to reach our place?</li>
+
+        <div class="content">
+          We usually take less than 2 hours’ time to reach customers place. However it may differ from case to case,
+          location, time of appointment, weather condition, etc.
+        </div>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <p>Copyright © 2023 Service Spot | All Rights Reserved</p>
+  <script src="script.js"></script>
+
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
