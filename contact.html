@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Service Spot</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="logo.png">
+  </head>
+  <body class="contactBody">
+    <div class="navbar">
+    <nav>
+      <ul id="contactUl">
+        <li class=" logo"><img src="logo.png" alt="service spot"></li>
+        <li><a class="navbarclr" href="index.html">Home</a></li>
+        <li><a class="navbarclr" href="about.html">About</a></li>
+        <li><a class="navbarclr" href="#services">Services</a></li>
+        <li><a class="navbarclr" href="contact.html">Contact</a> </li>
+<!--         <li> <button class="openButton" onclick="openForm()">Sign up</button></li> -->
+      </ul>
+    </nav>
+  </div>
+    <div class="contactContainer">
+      
+      <div class="contactMid">
+        <form method="post" style="color: white;"><h1 >Contact Us</h1>
+          <label for="Name" >Your Name <input id="yourName" name="YourName" type="text" required></label>
+        <label for="ContactNo">Your Contact No. <input id="yourContact" name="YourContact" type="tel" pattern="[0-9]{10}" required></label>
+        <label for="YourEmail">Your Email-Id<input id="yourEmail" name="YourEmail" type="email"></label>
+        <input id="contactSubmit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
